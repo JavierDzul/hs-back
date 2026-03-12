@@ -1,6 +1,8 @@
 {-# LANGUAGE DeriveGeneric #-}
 
-module Types.Card where
+module Types.Card
+  ( CardValidationResult(..)
+  ) where
 
 import Data.Aeson (ToJSON)
 import Data.Text (Text)

@@ -7,6 +7,8 @@ import Routes.Customers (customerRoutes)
 import Routes.Products (productRoutes)
 import Routes.Cart (cartRoutes)
 import Routes.Card (cardRoutes)
+import Routes.Payment (paymentRoutes)
+
 
 allRoutes :: AppState -> ScottyM ()
 allRoutes appState = do
@@ -14,3 +16,4 @@ allRoutes appState = do
   productRoutes appState
   cartRoutes appState
   cardRoutes
+  paymentRoutes appState

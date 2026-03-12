@@ -17,6 +17,6 @@ executable back
     build-depends:    base, scotty, aeson, text, containers, stm, uuid, wai-cors, http-types
     hs-source-dirs:   src
     default-language: Haskell2010
-    other-modules:    Services.Cart, Services.State, Services.Validation,Services.Routes ,Types.Cart, Types.Card, Types.Customer, Types.Product, Types.Requests, Routes.Card, Routes.Cart, Routes.Customers, Routes.Products
+    other-modules:    Services.Cart, Services.State, Services.Validation,Services.Routes ,Types.Cart, Types.Card, Types.Customer, Types.Product, Types.Requests, Types.Payment, Routes.Card, Routes.Cart, Routes.Customers, Routes.Products, Routes.Payment
   
     
