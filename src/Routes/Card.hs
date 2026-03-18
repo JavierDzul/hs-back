@@ -1,14 +1,13 @@
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE OverloadedStrings #-} -- Strings como Text
 
-module Routes.Card (cardRoutes) where
+module Routes.Card (cardRoutes) where -- Exporta rutas
 
-import Web.Scotty
+import Web.Scotty -- Scotty
+import Types.Requests (CardRequest(..)) -- Request de tarjeta
+import Services.Validation (validateCardNumber) -- Validador
 
-import Types.Requests (CardRequest(..))
-import Services.Validation (validateCardNumber)
-
-cardRoutes :: ScottyM ()
+cardRoutes :: ScottyM () -- Define rutas
 cardRoutes =
-  post "/validate-card" $ do
-    CardRequest number <- jsonData
-    json (validateCardNumber number)
+  post "/validate-card" $ do -- Endpoint POST /validate-card
+    CardRequest number <- jsonData -- Lee número desde JSON
+    json (validateCardNumber number) -- Responde validación  y da resultado
