@@ -34,10 +34,10 @@ seedCustomers = Map.fromList
 
 seedProducts :: Map.Map ProductId Product
 seedProducts = Map.fromList
-  [ (101, Product { productId = 101, productName = "Keyboard", priceInCents = 2999, discountPercent = 0 })
-  , (102, Product { productId = 102, productName = "Mouse", priceInCents = 1499, discountPercent = 0 })
-  , (103, Product { productId = 103, productName = "USB-C Cable", priceInCents = 799, discountPercent = 0 })
-  , (104, Product { productId = 104, productName = "Headphones", priceInCents = 4999, discountPercent = 0 })
+  [ (101, Product { productId = 101, productName = "Keyboard ⌨️", priceInCents = 2999, discountPercent = 0 })
+  , (102, Product { productId = 102, productName = "Mouse 🖱️", priceInCents = 1499, discountPercent = 0 })
+  , (103, Product { productId = 103, productName = "USB-C Cable 🔌", priceInCents = 799, discountPercent = 0 })
+  , (104, Product { productId = 104, productName = "Headphones 🎧", priceInCents = 4999, discountPercent = 0 })
   ]
 
 initState :: IO AppState
